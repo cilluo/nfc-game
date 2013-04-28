@@ -1,4 +1,7 @@
 NfcGame::Application.routes.draw do
+  resources :challenges
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
