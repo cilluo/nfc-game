@@ -9,3 +9,9 @@ window.NfcGame =
   Collections: {}
   Routers: {}
   Views: {}
+  init: ->
+    new NfcGame.Routers.ChallengesRouter()
+    Backbone.history.start()
+
+$(document).ready ->
+  NfcGame.init()
